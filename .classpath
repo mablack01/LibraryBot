@@ -2,6 +2,46 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="libs/selenium-java-2.41.0.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-java-2.41.0-srcs.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-java-2.41.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/cssparser-0.9.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/guava-15.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/htmlunit-2.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/htmlunit-core-js-2.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/httpclient-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/httpmime-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/json-20080701.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/nekohtml-1.9.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/operadriver-1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/phantomjsdriver-1.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/selenium-java-2.41.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/selenium-java-2.41.0-srcs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/testng-6.8.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/xercesImpl-2.10.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/miles/Documents/GitHub/LibraryBot/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

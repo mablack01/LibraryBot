@@ -63,6 +63,7 @@ public class Main extends JFrame implements ActionListener {
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
+			@Override
 			public void run() {
 				try {
 					frame = new Main();
@@ -269,21 +270,29 @@ public class Main extends JFrame implements ActionListener {
 				JOptionPane.showMessageDialog(frame, "Please correctly fill out your information.");
 				return;
 			}
+			final String time = getTime(user.getPeriod());
 			Timer timer = new Timer();
 			timer.schedule( new TimerTask() {
+				@Override
 				public void run() {
 					if (getTime().contains("7:01")) {
-						try {
-							WebDriver driver = new FirefoxDriver();            
+						try {         
+							WebDriver driver = new FirefoxDriver();
 							driver.get("https://pickatime.com/client?ven=11607876&login=true&email="+user.getEmail()+"&password="+user.getPassword()+"");
-							String time = getTime(user.getPeriod());
 							driver.findElement(By.linkText(time)).click();
 							driver.findElement(By.name("bookIt")).click();
 							driver.findElement(By.name("ret")).click();
 							setStatus("Successfully signed up for the library!");
 							cancel();
 						} catch(Exception ex) {
-							ex.printStackTrace();
+							WebDriver driver = new FirefoxDriver();
+							driver.get("https://pickatime.com/client?ven=11607876&login=true&email="+user.getEmail()+"&password="+user.getPassword()+"");
+							driver.findElement(By.linkText("Study Hall Signup")).click();
+							driver.findElement(By.linkText(time)).click();
+							driver.findElement(By.name("bookIt")).click();
+							driver.findElement(By.name("ret")).click();
+							setStatus("Successfully signed up for the library!");
+							cancel();
 						}
 					} else if (getTime().contains("7:00")) {
 						setStatus("It is now 7PM, preparing to sign you up...");

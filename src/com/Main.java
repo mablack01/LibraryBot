@@ -14,8 +14,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import javax.swing.DefaultComboBoxModel;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -23,7 +21,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import org.openqa.selenium.By;
@@ -88,124 +85,83 @@ public class Main extends JFrame implements ActionListener {
 		setContentPane(contentPane);
 
 		JLabel emailLabel = new JLabel("Email:");
+		emailLabel.setBounds(350, 23, 28, 14);
 		email = new JTextField();
+		email.setBounds(350, 48, 127, 20);
 		email.setColumns(10);
 
 		JLabel passwordLabel = new JLabel("Password:");
+		passwordLabel.setBounds(350, 79, 50, 14);
 		password = new JTextField();
+		password.setBounds(350, 104, 127, 20);
 		password.setColumns(10);
 
 		JLabel periodLabel = new JLabel("Period:");
+		periodLabel.setBounds(350, 135, 34, 14);
 		period = new JComboBox <String> ();
+		period.setBounds(350, 155, 127, 20);
 		period.setModel(new DefaultComboBoxModel <String> (new String[] {"R1", "R2", "R3", "R4", "R6", "R7"}));
 		period.addActionListener(this);
 		period.setActionCommand("chosePeriod");
 
 		saveAccount = new JButton("Save Account");
+		saveAccount.setBounds(350, 186, 127, 23);
 		saveAccount.addActionListener(this);
 		saveAccount.setActionCommand("saveAccount");
 
 		loadAccount = new JButton("Load Account");
+		loadAccount.setBounds(350, 220, 127, 23);
 		loadAccount.addActionListener(this);
 		loadAccount.setActionCommand("loadAccount");
 
 		startBot = new JButton("Start Bot!");
+		startBot.setBounds(15, 200, 120, 43);
 		startBot.addActionListener(this);
 		startBot.setActionCommand("startBot");
 
 		currentStatus = new JLabel("Current Status:");
+		currentStatus.setBounds(153, 200, 191, 14);
 
 		status = new JLabel("Idle...");
+		status.setBounds(153, 224, 191, 14);
 
 		JLabel instructions = new JLabel("Instructions:");
+		instructions.setBounds(15, 16, 61, 14);
 
 		JLabel line1 = new JLabel("Make sure that you enter all of your proper information into");
+		line1.setBounds(15, 36, 286, 14);
 
 		JLabel line2 = new JLabel("the following fields and click \"Save Account\". Also, make sure");
+		line2.setBounds(15, 56, 292, 14);
 
 		JLabel line3 = new JLabel("that you have FireFox installed, this is required to run the");
+		line3.setBounds(15, 76, 277, 14);
 
 		JLabel line4 = new JLabel("program.");
+		line4.setBounds(15, 96, 44, 14);
 
 		JLabel beatTheSixies = new JLabel("ENJOY BEATING THE SIXIES!");
+		beatTheSixies.setBounds(15, 146, 236, 20);
 		beatTheSixies.setFont(new Font("Tahoma", Font.BOLD, 16));
-
-		GroupLayout gl_contentPane = new GroupLayout(contentPane);
-		gl_contentPane.setHorizontalGroup(
-				gl_contentPane.createParallelGroup(Alignment.TRAILING)
-				.addGroup(gl_contentPane.createSequentialGroup()
-						.addContainerGap()
-						.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addGroup(gl_contentPane.createSequentialGroup()
-										.addComponent(startBot, GroupLayout.PREFERRED_SIZE, 120, GroupLayout.PREFERRED_SIZE)
-										.addGap(18)
-										.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-												.addComponent(currentStatus, GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
-												.addComponent(status, GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)))
-												.addComponent(instructions)
-												.addComponent(line1)
-												.addComponent(line2)
-												.addComponent(line3)
-												.addComponent(line4)
-												.addComponent(beatTheSixies))
-												.addPreferredGap(ComponentPlacement.RELATED)
-												.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING, false)
-														.addComponent(password, Alignment.LEADING)
-														.addComponent(loadAccount, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-														.addComponent(saveAccount, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-														.addComponent(periodLabel, Alignment.LEADING)
-														.addComponent(passwordLabel, Alignment.LEADING)
-														.addComponent(emailLabel, Alignment.LEADING)
-														.addComponent(email, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
-														.addComponent(period, Alignment.LEADING, 0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-														.addContainerGap())
-				);
-		gl_contentPane.setVerticalGroup(
-				gl_contentPane.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_contentPane.createSequentialGroup()
-						.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addGroup(gl_contentPane.createSequentialGroup()
-										.addGap(18)
-										.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING, false)
-												.addGroup(gl_contentPane.createSequentialGroup()
-														.addComponent(emailLabel)
-														.addPreferredGap(ComponentPlacement.UNRELATED)
-														.addComponent(email, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addPreferredGap(ComponentPlacement.UNRELATED)
-														.addComponent(passwordLabel)
-														.addPreferredGap(ComponentPlacement.UNRELATED)
-														.addComponent(password, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addGap(11)
-														.addComponent(periodLabel)
-														.addPreferredGap(ComponentPlacement.RELATED)
-														.addComponent(period, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-														.addPreferredGap(ComponentPlacement.UNRELATED)
-														.addComponent(saveAccount)
-														.addPreferredGap(ComponentPlacement.UNRELATED)
-														.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-																.addComponent(loadAccount)
-																.addComponent(status)))
-																.addGroup(gl_contentPane.createSequentialGroup()
-																		.addGap(13)
-																		.addComponent(line1)
-																		.addPreferredGap(ComponentPlacement.RELATED)
-																		.addComponent(line2)
-																		.addPreferredGap(ComponentPlacement.RELATED)
-																		.addComponent(line3)
-																		.addPreferredGap(ComponentPlacement.RELATED)
-																		.addComponent(line4)
-																		.addGap(36)
-																		.addComponent(beatTheSixies)
-																		.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-																		.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-																				.addComponent(currentStatus)
-																				.addComponent(startBot, GroupLayout.PREFERRED_SIZE, 43, GroupLayout.PREFERRED_SIZE)))))
-																				.addGroup(gl_contentPane.createSequentialGroup()
-																						.addContainerGap()
-																						.addComponent(instructions)))
-																						.addContainerGap(38, Short.MAX_VALUE))
-				);
-		contentPane.setLayout(gl_contentPane);
+		
+		contentPane.setLayout(null);
+		contentPane.add(startBot);
+		contentPane.add(currentStatus);
+		contentPane.add(status);
+		contentPane.add(instructions);
+		contentPane.add(line1);
+		contentPane.add(line2);
+		contentPane.add(line3);
+		contentPane.add(line4);
+		contentPane.add(beatTheSixies);
+		contentPane.add(password);
+		contentPane.add(loadAccount);
+		contentPane.add(saveAccount);
+		contentPane.add(periodLabel);
+		contentPane.add(passwordLabel);
+		contentPane.add(emailLabel);
+		contentPane.add(email);
+		contentPane.add(period);
 	}
 
 	/**
